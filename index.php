@@ -59,6 +59,15 @@ echo '<style>
     .small-font {
         font-size: 14px; /* 较小的字体大小 */
     }
+    
+    /* 响应式布局 */
+    @media screen and (min-width: 768px) {
+        /* 在较大屏幕上居中显示 */
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    }
     </style>'; // 页面样式
 echo '</head>';
 echo '<body>';
@@ -71,12 +80,14 @@ foreach ($groupedFiles as $year => $yearFiles) {
     echo '<h2>' . $year . '年</h2>'; // 年份标题
 
     echo '<ul>';
-    foreach ($yearFiles as $file) {
+    foreach
+
+ ($yearFiles as $file) {
         $pattern = '/\d{8}.\d{6}.(.*).html/'; // 正则表达式匹配标题
         preg_match($pattern, $file, $matches);
         $title = $matches[1];
 
-        $pattern = '/(\d{4})(\d{2})(\d{2}).(\d{2})(\d{2})(\d{2})/'; // 正则表达式匹配日期
+        $pattern = '/(\d{4})(\d{2})(\d{2}).(\d{2})(\d{2})(\d{2})/'; // 正则表达式匹
         preg_match($pattern, $file, $matches);
         $date = $matches[1] . '-' . $matches[2] . '-' . $matches[3];
 
