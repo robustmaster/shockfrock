@@ -30,14 +30,18 @@ foreach ($files as $file) {
 // 输出HTML页面
 echo '<html>';
 echo '<head>';
-echo '<title>HTML文件列表</title>';
+echo '<title>一派胡言收藏夹</title>';
 echo '<style>
     body {
         font-family: Arial, sans-serif;
-        text-align: center; /* 页面内容居中 */
+        text-align: left; /* 分组名称靠左显示 */
+        margin: 0; /* 清除默认的页面边距 */
+    }
+    h1 {
+        text-align: center; /* 页面标题居中 */
     }
     h2 {
-        text-align: center; /* 分组名称居中 */
+        margin-top: 20px; /* 分组标题与页面标题之间的间距 */
     }
     ul {
         list-style-type: none;
@@ -52,16 +56,16 @@ echo '<style>
     .date {
         color: #808080; /* 日期灰色显示 */
     }
-    @media screen and (min-width: 768px) {
-        /* 在较大屏幕上居中显示 */
-        body {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+    .small-font {
+        font-size: 14px; /* 较小的字体大小 */
     }
     </style>'; // 页面样式
 echo '</head>';
 echo '<body>';
+
+echo '<h1>一派胡言收藏夹</h1>'; // 页面标题
+
+echo '<p class="small-font"><a href="https://yipai.me">回到一派胡言博客</a></p>'; // 回到一派胡言博客的链接
 
 foreach ($groupedFiles as $year => $yearFiles) {
     echo '<h2>' . $year . '年</h2>'; // 年份标题
