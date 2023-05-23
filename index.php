@@ -39,6 +39,7 @@ echo '<style>
     }
     h1 {
         text-align: center; /* 页面标题居中 */
+        margin-top:20px;
     }
     h2 {
         margin-top: 20px; /* 分组标题与页面标题之间的间距 */
@@ -58,6 +59,7 @@ echo '<style>
     }
     .small-font {
         font-size: 14px; /* 较小的字体大小 */
+        text-align:center;
     }
     
     /* 响应式布局 */
