@@ -30,7 +30,7 @@ foreach ($files as $file) {
 // 输出HTML页面
 echo '<html>';
 echo '<head>';
-echo '<title>一派胡言收藏夹</title>';
+echo '<title>小报</title>';
 echo '<style>
     body {
         font-family: Arial, sans-serif;
@@ -74,9 +74,7 @@ echo '<style>
 echo '</head>';
 echo '<body>';
 
-echo '<h1>一派胡言收藏夹</h1>'; // 页面标题
-
-echo '<p class="small-font"><a href="https://yipai.me">回到一派胡言博客</a></p>'; // 回到一派胡言博客的链接
+echo '<h1>小报</h1>'; // 页面标题
 
 foreach ($groupedFiles as $year => $yearFiles) {
     echo '<h2>' . $year . '年</h2>'; // 年份标题
