@@ -1,0 +1,4 @@
+name = "yipai-keep"
+main = "main.py"
+compatibility_flags = ["python_workers"]
+compatibility_date = "2023-12-18"
