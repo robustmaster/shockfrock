@@ -1,5 +1,4 @@
 name = "yipai-keep"
-main = "main.py"
 pages_build_output_dir = "./"
 compatibility_flags = ["python_workers"]
 compatibility_date = "2023-12-18"
